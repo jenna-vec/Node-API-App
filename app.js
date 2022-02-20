@@ -1,7 +1,7 @@
 var inquirer = require('inquirer');
 var request = require('request');
 const yelp = require('yelp-fusion');
-const client = yelp.client('ERiFD3uG9qV2tKyuXTXCCATBZJ1W3DBOb_E7YGX0JvkoB71VFpY6ZZzzaQ94061YKnRSZHs-cH4FjdkErPMB2egCkbhE_5qvSPsB6t8O0abrPx2fmw2pEcCLKq77X3Yx');
+const client = yelp.client(YELP_API_KEY);
 var search = require('youtube-search');
 
 if(process.argv[2] === "geocoder"){
@@ -14,7 +14,7 @@ if(process.argv[2] === "geocoder"){
       ]).then(function(answers){
       
         var location = answers.location
-        var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + location + "&key=AIzaSyAuaOzywIAyxE7grRq9m26XrHm_MZTAi8E";
+        var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + location + "&key=" + GOOGLE_API_KEY;
       
         request(url, function(error, response) {
       
@@ -78,7 +78,7 @@ if(process.argv[2] === "youtube"){
     
     var opts = {
     maxResults: 5,
-    key: 'AIzaSyAb__tO6lXctp3X5v-tTmKioyUsF2OjCwQ'
+    key: YOUTUBE_API_KEY
     };
     
     search(searchTerm, opts, function(err, results) {
