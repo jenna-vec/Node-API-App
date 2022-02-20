@@ -1,0 +1,17 @@
+{
+  "name": "combined",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "request": "^2.88.2",
+    "yelp-fusion": "^3.0.0",
+    "youtube-search": "^1.1.4"
+  }
+}
