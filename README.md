@@ -3,7 +3,7 @@
 
 **Functionality**  
 Depending on which API is called (Yelp, YouTube, or Geocoder), process.argv and inquirer allow a user to find 
-information from a search query. Yelp, Youtube, and Geocoder APIs are used with Node.js to make calls to have information returned from these apis.
+information from a search query.
 
 **Technologies**   
 Node.JS  
